@@ -1,0 +1,14 @@
+**/node_modules/
+**/.env
+**/.env.*
+**/dist/
+**/.nuxt/
+**/.output/
+**/.angular/
+**/.next/
+**/build/
+**/public/sitemap.xml
+*-doc.*
+zola-release.*
+zola-assets.*
+zola/public/
