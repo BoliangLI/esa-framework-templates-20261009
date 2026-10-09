@@ -25,3 +25,5 @@
 - https://www.getzola.org/documentation/getting-started/cli-usage/
 
 不提交依赖目录、构建产物或本地环境文件。模板保留官方依赖版本，不代表已通过生产安全审计或部署验证。
+
+初始化兼容处理：Scully 的官方 schematic 需要 `src/polyfills.ts`，因此为 Angular 15 补齐该入口后，以 Puppeteer renderer 完成初始化。跳过了旧 Puppeteer 的 Chromium 下载。Remix 2 的主分支模板已移除，先获取官方 `remix@2.16.8` 标签，再用 `create-remix@2.16.8 --template <本地官方模板目录>` 生成。
